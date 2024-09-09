@@ -12,15 +12,14 @@ yesBtn.addEventListener('click', () => {
         // Tạo hiệu ứng trái tim
         createHearts();
 
-        // Thay đổi hình ảnh với hiệu ứng mờ dần
         mainImage.style.opacity = 0;
         setTimeout(() => {
-            mainImage.src = 'image/img5.jfif'; // Đường dẫn đến hình ảnh mới
+            mainImage.src = 'image/img3.jfif'; // Đường dẫn đến hình ảnh mới
             mainImage.style.opacity = 1;
         }, 500); // Thay đổi hình ảnh sau 500ms (khoảng thời gian để hình ảnh mờ)
 
         // Cập nhật dòng chữ
-        loveText.textContent = 'Ba mẹ ơi, con làm được rồi !!!!!';
+        loveText.textContent = 'Phải như vậy chứ....';
 
         // Ẩn các nút
         yesBtn.style.display = 'none';
@@ -34,17 +33,17 @@ noBtn.addEventListener('click', () => {
     noClickCount++;
 
     if (noClickCount === 1) {
-        mainImage.src = 'image/img1.jfif';
-        noBtn.textContent = 'Em chắc chưa';
-    } else if (noClickCount === 2) {
         mainImage.src = 'image/img2.jfif';
-        noBtn.textContent = 'Em không kiếm được ai như anh đâu';
-    } else if (noClickCount === 3) {
-        mainImage.src = 'image/img3.jfif';
-        noBtn.textContent = 'Đừng mà công chúa của anh';
-    } else if (noClickCount === 4) {
+        noBtn.textContent = 'Cậu chắc chưa';
+    } else if (noClickCount === 2) {
         mainImage.src = 'image/img4.jfif';
-        noBtn.textContent = 'Em đừng làm trái tim anh đau';
+        noBtn.textContent = 'Cho suy nghĩ lại lần nữa đó';
+    } else if (noClickCount === 3) {
+        mainImage.src = 'image/img5.jfif';
+        noBtn.textContent = 'Suy nghĩ kỹ cái đi';
+    } else if (noClickCount === 4) {
+        mainImage.src = 'image/img6.jfif';
+        noBtn.textContent = 'Đừng có như vậy mà @_@';
     }
 
     // Tăng kích thước của nút Yes mỗi khi nhấp vào No
